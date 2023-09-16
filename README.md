@@ -123,7 +123,7 @@ if __name__ == '__main__':
     )
 ```
 
-To get the frames from kinesis stream we need to take into account the shards. According to your needs you should 
+To get the frames from kinesis stream we need to consider the shards. According to your needs you should 
 change it a little bit.
 
 ```python
@@ -163,4 +163,4 @@ def detect_id_in_results(results):
     return status
 ```
 
-And mainly that's all. Real-time Object Detection with Kinesis stream. However, computer vision examples are often simple and quite straightforward. On the other hand, real-world computer vision projects tend to be more intricate, involving considerations such as cameras, lighting conditions, performance optimization, and accuracy. But remember, this is just an example.
+And that's all. Real-time Object Detection with Kinesis stream. However, computer vision examples are often simple and quite straightforward. On the other hand, real-world computer vision projects tend to be more intricate, involving considerations such as cameras, lighting conditions, performance optimization, and accuracy. But remember, this is just an example.
