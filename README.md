@@ -53,10 +53,7 @@ cap.release()
 cv.destroyAllWindows()
 ```
 
-But my idea is a little bit different. I want to capture the stream from the camera, emmit the stream to a AWS 
-Kinesis and after that, within another process, consume this Kinesis stream to detect the objects (or whatever you 
-need with the camera frames). To do that first we need to publish our OpenCV's frames into Kinesis.
-
+However, my idea is slightly different. I intend to capture the camera stream, transmit it to AWS Kinesis, and subsequently, within a separate process, ingest this Kinesis stream for object detection or any other purpose using the camera frames. To achieve this, our initial step is to publish our OpenCV frames into Kinesis.
 producer.py
 ```python
 import logging
@@ -166,4 +163,4 @@ def detect_id_in_results(results):
     return status
 ```
 
-And mainly that's all. Real-time Object Detection with Kinesis stream.
+And mainly that's all. Real-time Object Detection with Kinesis stream. However, computer vision examples are often simple and quite straightforward. On the other hand, real-world computer vision projects tend to be more intricate, involving considerations such as cameras, lighting conditions, performance optimization, and accuracy. But remember, this is just an example.
